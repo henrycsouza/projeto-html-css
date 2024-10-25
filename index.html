@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/favicon-32x32.png" type="image/x-icon">
+  <title>HTML & CSS Foundation</title>
+</head>
+<body>
+    <div class="container">
+      <img src="./img/Blog Image@2x.svg" class="first-img">
+      <p class="btn-nofunction">Learning</p>
+      <p class="first-parag">Publish 21 Dec 2023</p>
+      <h1>HTML & CSS foundations</h1>
+      <p class="second-parag">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <div class="container-user">
+        <img src="./img/userpic@2x.svg" class="second-img">
+        <p class="user">Greg Hooper</p>
+      </div>
+    </div>
+</body>
+</html>
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+  body{
+    background-color: #F4D04E;
+    display:flex;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    padding: 5em;
+  }
+
+  .container{
+    width: 384px;
+    height: 522px;
+    background-color: #fff;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    filter: drop-shadow(8px 8px 1px #000 );
+    margin-top: 6em;
+    transition: 1s;
+    cursor: pointer;
+  }
+
+  .container:hover{
+    filter: drop-shadow(11px 10px 1px #000 );
+  }
+
+  .container:hover h1{
+    color: #F4D04E;
+    transition: 1s;
+  }
+
+  .first-img{
+    width: auto;
+    height: 200px;
+    margin-top: 1.5em;
+  }
+
+  .btn-nofunction{
+    font-size: 16px;
+    font-family: "Figtree", sans-serif;
+    font-weight: bold;
+    line-height: 150%;
+    background-color: #F4D04E;
+    color: #000;
+    width: 100px;
+    margin-left: 2em;
+    border-radius: 5px;
+  }
+
+  .first-parag{
+    font-size: 14px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-left: 2.5em;
+  }
+
+  .container h1{
+    font-family: "Figtree", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0pxs;
+    text-align: left;
+    margin-left: 1.5em;
+    color: #111111;
+  }
+
+  .second-parag{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Figtree", sans-serif;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-align: left;
+    margin-left: 2.5em;
+    color:#6B6B6B;
+    width: 280px;
+  }
+
+  .container-user{
+    display: flex;
+    margin-left: 2em;
+  }
+
+  .user{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Figtree", sans-serif;
+    margin-left: 1em;
+  }
+
+  @media (max-width:375px) {
+    .container{
+      width: 327px;
+      height: 501px;
+      padding: 1em;
+    }
+
+    .first-img{
+      margin-top: -8px;
+      width: 279px;
+      height: 200px;
+    }
+    
+    .btn-nofunction{
+      margin-left: 0.5em;
+    }
+
+    .first-parag{
+      margin-left: 0.5em;
+    }
+    
+    .container h1{
+      margin-left: 0.5em;
+    }
+
+    .second-parag{
+      margin-left: 0.5em;
+    }
+
+    .container-user{
+      margin-top:2em;
+      margin-left: 0.2em;
+    }
+
+    .second-img{
+      border: 1px solid #000;
+      height: 35px;
+      border-radius: 100%;
+    }
+  }
+</style>
